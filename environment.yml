@@ -1,0 +1,6 @@
+name: egu22
+channels:
+  - conda-forge
+dependencies:
+  - esmvaltool=2.5
+  - jupyterlab
