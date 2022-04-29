@@ -4,3 +4,4 @@ channels:
 dependencies:
   - esmvaltool=2.5
   - jupyterlab
+  - python=3.10
