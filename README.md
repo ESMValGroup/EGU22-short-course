@@ -35,7 +35,7 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 
 1. Go to https://jupyterhub.dkrz.de and log in
 2. Click the `Start` button in the column Preset and row Levante
-3. Select job profile `5 GB memory, interactive, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. Note that only job profiles running on the [`prepost` partition](https://docs.dkrz.de/doc/levante/running-jobs/partitions-and-limits.html) have internet access.
+3. Select job profile `5 GB memory, interactive, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. See the [Partitions and Limits](https://docs.dkrz.de/doc/levante/running-jobs/partitions-and-limits.html) webpage for more information.
 4. Create a new kernel containing ESMValTool (this step only needs to be done once). Start a terminal session and run the command `mamba create -yq -n esmvaltool esmvaltool ipykernel` and wait a few minutes for the command to complete. Next, make the just created conda environment available as a notebook kernel by running `conda run -n esmvaltool python -m ipykernel install --user --name ESMValTool`.
 5. Upload the [config-user-v2.5-levante.yml](config-user-v2.5-levante.yml) file and move it to `~/.esmvaltool/config-user.yml`.
 6. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool".
