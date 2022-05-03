@@ -29,6 +29,7 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 3. Select job profile `5 GB memory, 1 core, prepost, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. Note that only job profiles running on the [`prepost` partition](https://docs.dkrz.de/doc/mistral/running-jobs/partitions-and-limits.html) have internet access.
 4. Upload the [config-user-v2.2-mistral.yml](config-user-v2.2-mistral.yml) file and move it to `~/.esmvaltool/config-user.yml`.
 5. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool (based on the latest module esmvaltool)".
+6. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
 
 ## ESMValTool v2.5 on Levante at DKRZ
 
@@ -38,10 +39,11 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 4. Create a new kernel containing ESMValTool (this step only needs to be done once). Start a terminal session and run the command `mamba create -yq -n esmvaltool esmvaltool ipykernel` and wait a few minutes for the command to complete. Next, make the just created conda environment available as a notebook kernel by running `conda run -n esmvaltool python -m ipykernel install --user --name ESMValTool`.
 5. Upload the [config-user-v2.5-levante.yml](config-user-v2.5-levante.yml) file and move it to `~/.esmvaltool/config-user.yml`.
 6. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool".
+7. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
 
 ## ESMValTool v2.5 on Jasmin
 
 1. Go to https://notebooks.jasmin.ac.uk and log in
-4. Create a new kernel containing ESMValTool (this step only needs to be done once). Open a notebook with the default `python` kernel and run the command `!mamba create -yq -n esmvaltool esmvaltool ipykernel` and wait for the command to complete. This can take up to half an hour. Next, make the just created conda environment available as a notebook kernel by running `conda run -n esmvaltool python -m ipykernel install --user --name ESMValTool`.
-5. Upload the [config-user-v2.5-mistral.yml](config-user-v2.5-mistral.yml) file and move it to `~/.esmvaltool/config-user.yml`.
+4. Create a new kernel containing ESMValTool (this step only needs to be done once). Open a notebook with the default `python` kernel and run the command `!mamba create -yq -n esmvaltool esmvaltool ipykernel` and wait for the command to complete. This can take up to half an hour. Next, make the just created conda environment available as a notebook kernel by running `!conda run -n esmvaltool python -m ipykernel install --user --name ESMValTool`.
+5. Upload the [config-user-v2.5-jasmin.yml](config-user-v2.5-jasmin.yml) file and move it to `~/.esmvaltool/config-user.yml`.
 6. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool".
