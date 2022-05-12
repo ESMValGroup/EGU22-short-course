@@ -24,6 +24,8 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 
 ## ESMValTool v2.2 on Mistral at DKRZ
 
+A notebook environment for ESMValTool version 2.2 is pre-installed on Mistral. Use it following the instructions below.
+
 1. Go to https://jupyterhub.dkrz.de and log in
 2. Click the `Start` button in the column Preset and row Mistral
 3. Select job profile `5 GB memory, 1 core, prepost, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. Note that only job profiles running on the [`prepost` partition](https://docs.dkrz.de/doc/mistral/running-jobs/partitions-and-limits.html) have internet access.
@@ -32,6 +34,8 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 6. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
 
 ## ESMValTool v2.5 on Levante at DKRZ
+
+On Levante you cannot (yet) choose ESMValTool from the available notebook environments. But you can add it by following these instructions. 
 
 1. Go to https://jupyterhub.dkrz.de and log in
 2. Click the `Start` button in the column Preset and row Levante
