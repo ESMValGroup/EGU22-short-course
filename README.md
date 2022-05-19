@@ -1,5 +1,6 @@
 # EGU22 short course
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
 [![Join the chat at https://gitter.im/ESMValGroup/EGU22-short-course](https://badges.gitter.im/ESMValGroup/EGU22-short-course.svg)](https://gitter.im/ESMValGroup/EGU22-short-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Learn to analyze Earth System Model data from a Jupyter Notebook with [ESMValTool](https://docs.esmvaltool.org) at [EGU22](https://www.egu22.eu/) session [SC5.14](https://meetingorganizer.copernicus.org/EGU22/session/43187)
