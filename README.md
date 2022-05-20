@@ -60,7 +60,7 @@ A notebook environment for ESMValTool version 2.2 is pre-installed on Mistral. U
 
 ## Locally
 
-1. Download [mambaforge]. If you are on a Linux machine, you will most likely need to download [Mambaforge-Linux-x86_64](https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh). ESMValTool also works on a Mac, but Windows is not supported because not all our dependencies are available for Windows.
+1. Download [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). If you are on a Linux machine, you will most likely need to download [Mambaforge-Linux-x86_64](https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh). ESMValTool also works on a Mac, but Windows is not supported because not all our dependencies are available for Windows.
 2. Install mambaforge by running `bash Mambaforge-$(uname)-$(uname -m).sh`, answer `yes` when asked if you wish the installer to initialize Mambaforge by running conda init. Finalize the installation by restarting your shell or running `source ~/.basrhc`.
 3. Run `mamba create --name esmvaltool jupyterlab esmvaltool=2.5`
 4. Run `mamba activate esmvaltool`
