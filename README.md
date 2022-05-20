@@ -22,13 +22,15 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 
 ## Running the notebooks
 
+During the short course, you will receive instructions on how to run the notebook(s). If you would like to try this yourself after the course, you can use the instructions available here.
+
 ## Binder
 
 Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
 
 ## Levante at DKRZ
 
-On Levante you cannot (yet) choose ESMValTool from the available notebook environments. But you can add it by following these instructions. 
+On Levante you cannot (yet) choose ESMValTool from the available notebook environments. But you can add it by following these instructions.
 
 1. Go to https://jupyterhub.dkrz.de and log in
 2. Click the `Start` button in the column Preset and row Levante
