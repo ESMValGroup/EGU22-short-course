@@ -22,18 +22,11 @@ Based on the examples and instructions in [ESMValTool-JupyterLab](https://github
 
 ## Running the notebooks
 
-## ESMValTool v2.2 on Mistral at DKRZ
+## Binder
 
-A notebook environment for ESMValTool version 2.2 is pre-installed on Mistral. Use it following the instructions below.
+Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
 
-1. Go to https://jupyterhub.dkrz.de and log in
-2. Click the `Start` button in the column Preset and row Mistral
-3. Select job profile `5 GB memory, 1 core, prepost, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. Note that only job profiles running on the [`prepost` partition](https://docs.dkrz.de/doc/mistral/running-jobs/partitions-and-limits.html) have internet access.
-4. Upload the [config-user-v2.2-mistral.yml](config-user-v2.2-mistral.yml) file and move it to `~/.esmvaltool/config-user.yml`.
-5. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool (based on the latest module esmvaltool)".
-6. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
-
-## ESMValTool v2.5 on Levante at DKRZ
+## Levante at DKRZ
 
 On Levante you cannot (yet) choose ESMValTool from the available notebook environments. But you can add it by following these instructions. 
 
@@ -45,9 +38,29 @@ On Levante you cannot (yet) choose ESMValTool from the available notebook enviro
 6. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool".
 7. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
 
-## ESMValTool v2.5 on Jasmin
+## Jasmin
 
 1. Go to https://notebooks.jasmin.ac.uk and log in
 4. Create a new kernel containing ESMValTool (this step only needs to be done once). Open a notebook with the default `python` kernel and run the command `!mamba create -yq -n esmvaltool esmvaltool ipykernel` and wait for the command to complete. This can take up to half an hour. Next, make the just created conda environment available as a notebook kernel by running `!conda run -n esmvaltool python -m ipykernel install --user --name ESMValTool`.
 5. Upload the [config-user-v2.5-jasmin.yml](config-user-v2.5-jasmin.yml) file and move it to `~/.esmvaltool/config-user.yml`.
 6. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool".
+
+## Mistral at DKRZ
+
+A notebook environment for ESMValTool version 2.2 is pre-installed on Mistral. Use it following the instructions below.
+
+1. Go to https://jupyterhub.dkrz.de and log in
+2. Click the `Start` button in the column Preset and row Mistral
+3. Select job profile `5 GB memory, 1 core, prepost, 12:00h`, enter account number `bk1088` (or the number of another project at DKRZ that gives you access to compute resources, e.g. `bd0854`), leave the other questions empty and click `Start`. Note that only job profiles running on the [`prepost` partition](https://docs.dkrz.de/doc/mistral/running-jobs/partitions-and-limits.html) have internet access.
+4. Upload the [config-user-v2.2-mistral.yml](config-user-v2.2-mistral.yml) file and move it to `~/.esmvaltool/config-user.yml`.
+5. When opening a notebook or starting a new empty notebook, select the kernel called "ESMValTool (based on the latest module esmvaltool)".
+6. Stop the jupyter lab server when you're done with it to avoid wasting computational resources. To do this, click `File` and the `Hub Control Panel` and then click the red `Stop` button.
+
+## Locally
+
+1. Download [mambaforge]. If you are on a Linux machine, you will most likely need to download [Mambaforge-Linux-x86_64](https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh). ESMValTool also works on a Mac, but Windows is not supported because not all our dependencies are available for Windows.
+2. Install mambaforge by running `bash Mambaforge-$(uname)-$(uname -m).sh`, answer `yes` when asked if you wish the installer to initialize Mambaforge by running conda init. Finalize the installation by restarting your shell or running `source ~/.basrhc`.
+3. Run `mamba create --name esmvaltool jupyterlab esmvaltool=2.5`
+4. Run `mamba activate esmvaltool`
+5. Run `jupyter lab` to start the notebook server. This will open a browser window with a jupyter lab environment.
+6. Navigate to the `notebooks` folder using the menu on the left and open the example notebook. When asked which kernel to use, select the Python 3 kernel.
