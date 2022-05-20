@@ -19,3 +19,31 @@ Where: [EGU22](https://www.egu22.eu/) Room -2.85/86 and online
 > The ESMValTool has been designed to analyze the data produced by Earth System Models participating in the Coupled Model Intercomparison Project (CMIP), but it also supports commonly used observational and re-analysis climate datasets, such as ERA5. Version 2 of the ESMValTool has been specifically developed to target the increased data volume and complexity of CMIP Phase 6 (CMIP6) datasets. ESMValTool comes with a large number of well-established analytics, such as those in Chapter 9 of the Intergovernmental Panel on Climate Change (IPCC) Fifth Assessment Report (AR5) (Flato et al., 2013) and has been extensively used in preparing the figures of the Sixth Assessment Report (AR6). In this way, the evaluation of model results can be made more efficient, thereby enabling scientists to focus on developing more innovative methods of analysis rather than constantly having to "reinvent the wheel".
 
 Based on the examples and instructions in [ESMValTool-JupyterLab](https://github.com/ESMValGroup/ESMValTool-JupyterLab).
+
+
+## Course material
+
+### Jupyterhub log-in page at DKRZ
+
+https://jupyterhub.dkrz.de
+
+### Repository address for git clone in Jupyter notebook
+
+https://github.com/ESMValGroup/EGU22-short-course.git
+
+
+### Slides 
+
+[ESMValTool slides at EGU2022 short course](./esmvaltool_slides_EGU2022_short_course.pdf)
+
+### Reference
+
+- [ESMValTool Documentation](https://docs.esmvaltool.org/en/latest/)
+- [ESMValTool Website](https://www.esmvaltool.org/)
+- [ESMValTool Tutorial](https://esmvalgroup.github.io/ESMValTool_Tutorial/index.html)
+- [ESMValGroup Project on GitHub](https://github.com/ESMValGroup)
+- [ESMValTool Available Recipes](https://docs.esmvaltool.org/en/latest/recipes/index.html)
+- [How to Cite ESMValTool](https://www.esmvaltool.org/references.html)
+
+
+- [ESGF Nodes](https://esgf.llnl.gov/nodes.html)
