@@ -1,6 +1,6 @@
 # EGU22 short course
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2FIntroduction_to_ESMValTool.ipynb)
 [![Join the chat at https://gitter.im/ESMValGroup/EGU22-short-course](https://badges.gitter.im/ESMValGroup/EGU22-short-course.svg)](https://gitter.im/ESMValGroup/EGU22-short-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Learn to analyze Earth System Model data from a Jupyter Notebook with [ESMValTool](https://docs.esmvaltool.org) at [EGU22](https://www.egu22.eu/) session [SC5.14](https://meetingorganizer.copernicus.org/EGU22/session/43187)
@@ -20,13 +20,42 @@ Where: [EGU22](https://www.egu22.eu/) Room -2.85/86 and online
 
 Based on the examples and instructions in [ESMValTool-JupyterLab](https://github.com/ESMValGroup/ESMValTool-JupyterLab).
 
+## Course material
+
+### Jupyterhub log-in page at DKRZ
+
+https://jupyterhub.dkrz.de
+
+### Repository address for git clone in Jupyter notebook
+
+https://github.com/ESMValGroup/EGU22-short-course.git
+
+### Slides 
+
+[ESMValTool slides at EGU2022 short course](./esmvaltool_slides_EGU2022_short_course.pdf)
+
+### Reference
+
+- [ESMValTool Documentation](https://docs.esmvaltool.org/en/latest/)
+- [ESMValTool Website](https://www.esmvaltool.org/)
+- [ESMValTool Tutorial](https://esmvalgroup.github.io/ESMValTool_Tutorial/index.html)
+- [ESMValGroup Project on GitHub](https://github.com/ESMValGroup)
+- [ESMValTool Available Recipes](https://docs.esmvaltool.org/en/latest/recipes/index.html)
+- [How to Cite ESMValTool](https://www.esmvaltool.org/references.html)
+- [ESGF Nodes](https://esgf.llnl.gov/nodes.html)
+
 ## Running the notebooks
 
-During the short course, you will receive instructions on how to run the notebook(s). If you would like to try this yourself after the course, you can use the instructions available here.
+*During the short course, you will receive instructions on how to run the notebook.*
+
+If you would like continue using ESMValTool after the course, you can use the instructions available here to start the notebook.
 
 ## Binder
 
 Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
+Note that no data is available on Binder and resources are limited, so this is only recommended for running the example notebook in this repository (the tool will automatically download the small amount of data that is required to run the exxample).
+If you would like to run larger analyses, it is recommended that you make use of compute infrastructure that is connected to an [ESGF Node](https://esgf.llnl.gov/nodes.html) because there you have all data already available.
+Examples of such compute facilities are [Levante at DKRZ](#Levante-at-DKRZ) and [Jasmin at CEDA](#Jasmin), but many more are available. See the [presentation](./esmvaltool_slides_EGU2022_short_course.pdf) for a longer list.
 
 ## Levante at DKRZ
 
