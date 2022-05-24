@@ -1,0 +1,82 @@
+###############################################################################
+# User configuration file for ESMValTool v2.2 on Mistral at DKRZ
+###############################################################################
+---
+
+# Destination directory where all output will be written
+# Includes log files and performance stats.
+output_dir: ~/esmvaltool_output
+
+# Rootpaths to the data from different projects
+rootpath:
+ CMIP6: /mnt/lustre02/work/ik1017/CMIP6/data/CMIP6
+ CMIP5: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP5_DKRZ
+ CMIP3: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP3
+ CORDEX: /mnt/lustre02/work/ik1017/C3SCORDEX/data/c3s-cordex/output
+ OBS: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/OBS
+ OBS6: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/OBS
+ obs4MIPs: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/OBS
+ ana4mips: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/OBS
+ native6: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/RAWOBS
+ RAWOBS: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/RAWOBS
+
+# Directory structure for input data
+# See ``config-developer.yml`` for definitions.
+drs:
+ CMIP6: DKRZ
+ CMIP5: DKRZ
+ CMIP3: DKRZ
+ CORDEX: BADC
+ obs4MIPs: default
+ ana4mips: default
+ OBS: default
+ OBS6: default
+ native6: default
+
+# Auxiliary data directory
+# Used by some recipes to look for additional datasets.
+auxiliary_data_dir: /mnt/lustre02/work/bd0854/DATA/ESMValTool2/AUX
+
+# Run at most this many tasks in parallel --- [null]/1/2/3/4/...
+# Set to ``null`` to use the number of available CPUs. If you run out of
+# memory, try setting max_parallel_tasks to ``1`` and check the amount of
+# memory you need for that by inspecting the file ``run/resource_usage.txt`` in
+# the output directory. Using the number there you can increase the number of
+# parallel tasks again to a reasonable number for the amount of memory
+# available in your system.
+max_parallel_tasks: null
+
+# Log level of the console --- debug/[info]/warning/error
+# For much more information printed to screen set log_level to ``debug``.
+log_level: info
+
+# Exit on warning --- true/[false]
+# # Only used in NCL diagnostic scripts.
+exit_on_warning: false
+
+# Plot file format --- [png]/pdf/ps/eps/epsi
+output_file_type: png
+
+# Remove the ``preproc`` directory if the run was successful --- [true]/false
+# By default this option is set to ``true``, so all preprocessor output files
+# will be removed after a successful run. Set to ``false`` if you need those
+# files.
+remove_preproc_dir: true
+
+# Use netCDF compression --- true/[false]
+compress_netcdf: false
+
+# Save intermediary cubes in the preprocessor --- true/[false]
+# Setting this to ``true`` will save the output cube from each preprocessing
+# step. These files are numbered according to the preprocessing order.
+save_intermediary_cubes: false
+
+# Path to custom ``config-developer.yml`` file
+# This can be used to customise project configurations. See
+# ``config-developer.yml`` for an example. Set to ``null`` to use the default.
+config_developer_file: null
+
+# Use a profiling tool for the diagnostic run --- [false]/true
+# A profiler tells you which functions in your code take most time to run.
+# Only available for Python diagnostics.
+profile_diagnostic: false
