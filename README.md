@@ -52,7 +52,7 @@ If you would like continue using ESMValTool after the course, you can use the in
 
 ## Binder
 
-Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2F1_Introduction_to_ESMValTool.ipynb)
+Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESMValGroup/EGU22-short-course/main?labpath=notebooks%2FIntroduction_to_ESMValTool.ipynb)
 Note that no data is available on Binder and resources are limited, so this is only recommended for running the example notebook in this repository (the tool will automatically download the small amount of data that is required to run the exxample).
 If you would like to run larger analyses, it is recommended that you make use of compute infrastructure that is connected to an [ESGF Node](https://esgf.llnl.gov/nodes.html) because there you have all data already available.
 Examples of such compute facilities are [Levante at DKRZ](#Levante-at-DKRZ) and [Jasmin at CEDA](#Jasmin), but many more are available. See the [presentation](./esmvaltool_slides_EGU2022_short_course.pdf) for a longer list.
